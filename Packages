@@ -1,0 +1,114 @@
+ACCEPT_KEYWORDS: arm
+ACCEPT_LICENSE: * -@EULA
+ACCEPT_PROPERTIES: *
+CBUILD: armv7a-hardfloat-linux-gnueabi
+CHOST: armv7a-hardfloat-linux-gnueabi
+CONFIG_PROTECT: /etc /usr/share/gnupg/qualified.txt
+CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo
+FEATURES: assume-digests binpkg-logs config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch protect-owned sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch
+GENTOO_MIRRORS: ftp://ftp.fsn.hu/pub/linux/distributions/gentoo http://gentoo.inf.elte.hu/
+PACKAGES: 6
+PROFILE: default/linux/arm/13.0
+SYNC: rsync://rsync.gentoo.org/gentoo-portage
+TIMESTAMP: 1370610406
+USE: X acl alsa alsa_cards_emu10k1 apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm avi berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gif gpm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_keyboard input_devices_mouse input_devices_synaptics jpeg kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mp3 mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-3 png python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl tcpd unicode userland_GNU video_cards_dummy video_cards_exynos video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
+VERSION: 0
+REPO: gentoo
+
+BUILD_TIME: 1369913120
+CPV: net-im/pidgin-2.10.7-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND: >=dev-libs/glib-2.16 >=dev-libs/libxml2-2.6.18 sys-libs/ncurses[unicode] >=x11-libs/gtk+-2.10:2[-aqua] x11-libs/libSM x11-libs/libXScrnSaver =media-libs/gstreamer-0.10* =media-libs/gst-plugins-good-0.10* || ( net-libs/farstream:0.1 net-libs/farsight2 ) media-plugins/gst-plugins-meta:0.10 media-plugins/gst-plugins-gconf:0.10 >=dev-libs/nss-3.11 !<x11-plugins/pidgin-facebookchat-1.69-r1 dev-lang/perl dev-perl/XML-Parser virtual/pkgconfig x11-proto/scrnsaverproto >=dev-util/intltool-0.41.1 sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
+DESC: GTK Instant Messenger client
+EAPI: 4
+IUSE: dbus debug doc eds gadu gnutls +gstreamer +gtk idn meanwhile networkmanager nls perl silc tcl tk spell sasl ncurses groupwise prediction python +xscreensaver zephyr zeroconf aqua debug
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: GPL-2
+MD5: c02c0fe5e9cf2981be8ba22c94433815
+MTIME: 1370610386
+RDEPEND: >=dev-libs/glib-2.16 >=dev-libs/libxml2-2.6.18 sys-libs/ncurses[unicode] >=x11-libs/gtk+-2.10:2[-aqua] x11-libs/libSM x11-libs/libXScrnSaver =media-libs/gstreamer-0.10* =media-libs/gst-plugins-good-0.10* || ( net-libs/farstream:0.1 net-libs/farsight2 ) media-plugins/gst-plugins-meta:0.10 media-plugins/gst-plugins-gconf:0.10 >=dev-libs/nss-3.11 !<x11-plugins/pidgin-facebookchat-1.69-r1
+SHA1: 586f4a157df857da117a2589ca5b433edcb3b308
+SIZE: 8707638
+USE: gstreamer gtk ncurses nls xscreensaver
+
+BUILD_TIME: 1369798121
+CPV: net-irc/hexchat-2.9.5
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup
+DEPEND: dev-libs/glib:2 x11-libs/gtk+:2 virtual/libintl >=dev-libs/openssl-0.9.8u virtual/pkgconfig sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
+DESC: Graphical IRC client based on XChat
+EAPI: 5
+IUSE: dbus fastscroll +gtk ipv6 libnotify libproxy nls ntlm perl +plugins plugin-checksum plugin-doat plugin-fishlim plugin-sysinfo python spell ssl theme-manager python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_single_target_python2_5 python_single_target_python2_6 python_single_target_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~amd64-linux
+LICENSE: GPL-2
+MD5: 6be569de31cd586105bf214cfa75f637
+MTIME: 1370610405
+RDEPEND: dev-libs/glib:2 x11-libs/gtk+:2 virtual/libintl >=dev-libs/openssl-0.9.8u
+SHA1: ceb1a0af95eeed9a3e70a0d03f0be6bcd2eb2047
+SIZE: 1259813
+USE: gtk nls plugins python_single_target_python2_7 python_targets_python2_7 ssl
+
+BUILD_TIME: 1370297391
+CPV: www-client/firefox-17.0.6
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=sys-devel/binutils-2.16.1 >=dev-libs/nss-3.14.1 >=dev-libs/nspr-4.9.4 >=dev-libs/glib-2.26:2 >=media-libs/mesa-7.10 >=media-libs/libpng-1.5.11[apng] virtual/libffi >=media-libs/libvpx-1.0.0 media-libs/alsa-lib virtual/pkgconfig >=sys-apps/sed-4 x11-libs/libXrender x11-libs/libXt >=sys-libs/zlib-1.1.4 virtual/pkgconfig dev-lang/python:2.7[threads,sqlite] app-arch/zip app-arch/unzip >=app-text/hunspell-1.2 dev-libs/expat >=dev-libs/libevent-1.4.7 >=x11-libs/cairo-1.8[X] >=x11-libs/gtk+-2.8.6:2 >=x11-libs/pango-1.10.1[X] virtual/jpeg media-libs/alsa-lib virtual/freedesktop-icon-theme >=dev-libs/dbus-glib-0.72 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) =sys-devel/autoconf-2.1* sys-devel/libtool app-arch/unzip app-arch/unzip
+DESC: Firefox Web Browser
+EAPI: 3
+IUSE: bindist gstreamer +jit +minimal pgo selinux system-sqlite custom-cflags custom-optimization +alsa +dbus debug libnotify startup-notification system-sqlite wifi pgo linguas_af linguas_ak linguas_ar linguas_as linguas_ast linguas_be linguas_bg linguas_bn_BD linguas_bn_IN linguas_br linguas_bs linguas_ca linguas_cs linguas_csb linguas_cy linguas_da linguas_de linguas_el linguas_en_GB linguas_en_ZA linguas_eo linguas_es_AR linguas_es_CL linguas_es_ES linguas_es_MX linguas_et linguas_eu linguas_fa linguas_fi linguas_fr linguas_fy_NL linguas_ga_IE linguas_gd linguas_gl linguas_gu_IN linguas_he linguas_hi_IN linguas_hr linguas_hu linguas_hy_AM linguas_id linguas_is linguas_it linguas_ja linguas_kk linguas_km linguas_kn linguas_ko linguas_ku linguas_lg linguas_lt linguas_lv linguas_mai linguas_mk linguas_ml linguas_mr linguas_nb_NO linguas_nl linguas_nn_NO linguas_nso linguas_or linguas_pa_IN linguas_pl linguas_pt_BR linguas_pt_PT linguas_rm linguas_ro linguas_ru linguas_si linguas_sk linguas_sl linguas_son linguas_sq linguas_sr linguas_sv_SE linguas_ta linguas_ta_LK linguas_te linguas_th linguas_tr linguas_uk linguas_vi linguas_zh_CN linguas_zh_TW linguas_zu
+KEYWORDS: ~alpha amd64 arm ~ia64 ppc ppc64 x86 ~amd64-linux ~x86-linux
+LICENSE: MPL-2.0 GPL-2 LGPL-2.1
+MD5: a1e7d07cfc904805e8e0793d7ee7fe7b
+MTIME: 1370608533
+RDEPEND: >=sys-devel/binutils-2.16.1 >=dev-libs/nss-3.14.1 >=dev-libs/nspr-4.9.4 >=dev-libs/glib-2.26:2 >=media-libs/mesa-7.10 >=media-libs/libpng-1.5.11[apng] virtual/libffi >=media-libs/libvpx-1.0.0 media-libs/alsa-lib x11-libs/libXrender x11-libs/libXt >=sys-libs/zlib-1.1.4 app-arch/zip app-arch/unzip >=app-text/hunspell-1.2 dev-libs/expat >=dev-libs/libevent-1.4.7 >=x11-libs/cairo-1.8[X] >=x11-libs/gtk+-2.8.6:2 >=x11-libs/pango-1.10.1[X] virtual/jpeg media-libs/alsa-lib virtual/freedesktop-icon-theme >=dev-libs/dbus-glib-0.72
+SHA1: 37d843a42c967f153a66cec87d35072a4a13f1d0
+SIZE: 18536284
+USE: alsa bindist dbus jit minimal
+
+BUILD_TIME: 1370398211
+CPV: www-client/midori-0.5.2
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-db/sqlite-3.6.19:3 >=dev-libs/glib-2.22 dev-libs/libxml2 >=net-libs/libsoup-2.34:2.4 x11-libs/libXScrnSaver net-libs/webkit-gtk:2 x11-libs/gtk+:2 dev-libs/libunique:1 dev-lang/python:2.7 || ( dev-lang/vala:0.20 dev-lang/vala:0.18 dev-lang/vala:0.16 dev-lang/vala:0.14 ) dev-util/intltool gnome-base/librsvg sys-devel/gettext >=sys-apps/sed-4 dev-lang/python !dev-lang/python[-threads]
+DESC: A lightweight web browser based on WebKitGTK+
+EAPI: 5
+IUSE: +deprecated doc gnome libnotify nls +unique webkit2 zeitgeist
+KEYWORDS: ~amd64 ~arm ~ppc ~x86 ~x86-fbsd
+LICENSE: LGPL-2.1 MIT
+MD5: d12d186d730895b1c1100e744e899371
+MTIME: 1370608477
+RDEPEND: >=dev-db/sqlite-3.6.19:3 >=dev-libs/glib-2.22 dev-libs/libxml2 >=net-libs/libsoup-2.34:2.4 x11-libs/libXScrnSaver net-libs/webkit-gtk:2 x11-libs/gtk+:2 dev-libs/libunique:1
+SHA1: 2edfcf90e7089b4ff36fc5362bc760e3995903fa
+SIZE: 536375
+USE: deprecated nls unique
+
+BUILD_TIME: 1369775489
+CPV: x11-base/xorg-drivers-1.13
+DEFINED_PHASES: -
+DESC: Meta package containing deps on all xorg drivers
+EAPI: 4
+IUSE: video_cards_apm video_cards_ark video_cards_ast video_cards_chips video_cards_cirrus video_cards_dummy video_cards_epson video_cards_fbdev video_cards_geode video_cards_glint video_cards_i128 video_cards_i740 video_cards_intel video_cards_mach64 video_cards_mga video_cards_modesetting video_cards_neomagic video_cards_newport video_cards_nouveau video_cards_nv video_cards_omap video_cards_omapfb video_cards_qxl video_cards_r128 video_cards_radeon video_cards_rendition video_cards_s3 video_cards_s3virge video_cards_savage video_cards_siliconmotion video_cards_sis video_cards_sisusb video_cards_sunbw2 video_cards_suncg14 video_cards_suncg3 video_cards_suncg6 video_cards_sunffb video_cards_sunleo video_cards_suntcx video_cards_tdfx video_cards_tga video_cards_trident video_cards_tseng video_cards_v4l video_cards_vesa video_cards_via video_cards_virtualbox video_cards_vmware video_cards_voodoo video_cards_fglrx video_cards_nvidia input_devices_acecad input_devices_aiptek input_devices_elographics input_devices_evdev input_devices_fpit input_devices_hyperpen input_devices_joystick input_devices_keyboard input_devices_mouse input_devices_mutouch input_devices_penmount input_devices_tslib input_devices_vmmouse input_devices_void input_devices_synaptics input_devices_wacom
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: metapackage
+MD5: 28bb490d2fe2bd0fd9890a4e9d32ca32
+MTIME: 1370610300
+PDEPEND: x11-drivers/xf86-input-evdev x11-drivers/xf86-input-keyboard x11-drivers/xf86-input-mouse x11-drivers/xf86-input-synaptics x11-drivers/xf86-video-dummy x11-drivers/xf86-video-fbdev x11-drivers/xf86-video-omap x11-drivers/xf86-video-omapfb x11-drivers/xf86-video-v4l !x11-drivers/xf86-input-citron !x11-drivers/xf86-video-cyrix !x11-drivers/xf86-video-impact !x11-drivers/xf86-video-nsc !x11-drivers/xf86-video-sunbw2
+SHA1: c4fae23c7a318dd735db2d7d0285a2fac9294237
+SIZE: 12955
+USE: input_devices_evdev input_devices_keyboard input_devices_mouse input_devices_synaptics video_cards_dummy video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l
+
+BUILD_TIME: 1369942695
+CPV: x11-base/xorg-server-1.13.4
+DEFINED_PHASES: compile configure install postinst postrm prepare pretend test unpack
+DEPEND: >=app-admin/eselect-opengl-1.0.8 dev-libs/openssl media-libs/freetype >=x11-apps/iceauth-1.0.2 >=x11-apps/rgb-1.0.3 >=x11-apps/xauth-1.0.3 x11-apps/xkbcomp >=x11-libs/libdrm-2.4.20 >=x11-libs/libpciaccess-0.12.901 >=x11-libs/libXau-1.0.4 >=x11-libs/libXdmcp-1.0.2 >=x11-libs/libXfont-1.4.2 >=x11-libs/libxkbfile-1.0.4 >=x11-libs/pixman-0.21.8 >=x11-libs/xtrans-1.2.2 >=x11-misc/xbitmaps-1.0.1 >=x11-misc/xkeyboard-config-2.4.1-r3 >=x11-libs/libX11-1.1.5 >=x11-libs/libXext-1.0.5 >=media-libs/mesa-8[nptl] >=virtual/udev-150 >=x11-apps/xinit-1.3 sys-devel/flex >=x11-proto/bigreqsproto-1.1.0 >=x11-proto/compositeproto-0.4 >=x11-proto/damageproto-1.1 >=x11-proto/fixesproto-5.0 >=x11-proto/fontsproto-2.0.2 >=x11-proto/glproto-1.4.16 >=x11-proto/inputproto-2.1.99.3 >=x11-proto/kbproto-1.0.3 >=x11-proto/randrproto-1.4.0 >=x11-proto/recordproto-1.13.99.1 >=x11-proto/renderproto-0.11 >=x11-proto/resourceproto-1.2.0 >=x11-proto/scrnsaverproto-1.1 >=x11-proto/trapproto-3.4.3 >=x11-proto/videoproto-2.2.2 >=x11-proto/xcmiscproto-1.2.0 >=x11-proto/xextproto-7.1.99 >=x11-proto/xf86dgaproto-2.0.99.1 >=x11-proto/xf86rushproto-1.1.2 >=x11-proto/xf86vidmodeproto-2.2.99.1 >=x11-proto/xineramaproto-1.1.3 >=x11-proto/xproto-7.0.22 >=x11-proto/xf86driproto-2.1.0 >=x11-proto/dri2proto-2.8 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org X servers
+EAPI: 5
+IUSE: dmx kdrive xnest xorg xvfb ipv6 minimal nptl selinux +suid tslib +udev static-libs doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: MIT
+MD5: 41907dc589846f2222a91961712bad0c
+MTIME: 1370610104
+PDEPEND: >=x11-base/xorg-drivers-1.13
+RDEPEND: >=app-admin/eselect-opengl-1.0.8 dev-libs/openssl media-libs/freetype >=x11-apps/iceauth-1.0.2 >=x11-apps/rgb-1.0.3 >=x11-apps/xauth-1.0.3 x11-apps/xkbcomp >=x11-libs/libdrm-2.4.20 >=x11-libs/libpciaccess-0.12.901 >=x11-libs/libXau-1.0.4 >=x11-libs/libXdmcp-1.0.2 >=x11-libs/libXfont-1.4.2 >=x11-libs/libxkbfile-1.0.4 >=x11-libs/pixman-0.21.8 >=x11-libs/xtrans-1.2.2 >=x11-misc/xbitmaps-1.0.1 >=x11-misc/xkeyboard-config-2.4.1-r3 >=x11-libs/libX11-1.1.5 >=x11-libs/libXext-1.0.5 >=media-libs/mesa-8[nptl] >=virtual/udev-150 >=x11-apps/xinit-1.3
+SHA1: b0ae46e19d0d534503515b4c9a0b51d39be1a09f
+SIZE: 2684341
+SLOT: 0/1.13.4
+USE: nptl suid udev xorg
+
