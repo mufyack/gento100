@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>gento100</name>
+    <description>Packages and ebuilds for Toshiba ac100</description>
+    <homepage>https://github.com/mufyack/gento100</homepage>
+    <owner type="project">
+      <email>mufy@mufy.biz</email>
+      <name>Mufy</name>
+    </owner>
+    <source type="git">git://github.com/mufyack/gento100.git</source>
+    <feed>https://github.com/mufyack/gento100/commits/master.atom</feed>
+  </repo>
+</repositories>
